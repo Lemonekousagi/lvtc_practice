@@ -23,4 +23,7 @@ Route::get('/', function () {
 */
 Route::get('/',[PostController::class, 'index']);
 
+Route::get('/posts/create', [PostController::class, 'create']); //posts/{post}より上に書くこと。（{post}にcreateが入る恐れがある。
 Route::get('posts/{post}',[PostController::class, 'show']);
+
+Route::post('/posts', [PostController::class, 'store']);

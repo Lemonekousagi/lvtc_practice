@@ -8,6 +8,7 @@
 </head>
 <body>
     <p>{{ config('app.timezone') }}</p>
+    <a href='/posts/create'>create</a>
     <h1>Blog Name</h1>
     <div class="posts">
         @foreach ($posts as $post)
